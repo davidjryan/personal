@@ -1,25 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Rubik);
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  font-family: 'Rubik', sans-serif;
+  padding: 0 50px 0 50px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: white;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 .App-title {
-  font-size: 1.5em;
+  margin: 0;
+  font-size: 3.5em;
 }
 
 .App-intro {
   font-size: large;
+}
+
+#site-nav {
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 860px;
+  padding-bottom: 20px;
+  padding-bottom: 2rem
+}
+
+#main-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+  grid-gap: 2px;
+}
+
+#sub-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+  grid-gap: 2px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  text-decoration: none;
+  color: white;
+}
+
+.button[href="/"] {
+  background-color: #82BFB7
+}
+
+.button[href="/code"] {
+  background-color: #C75C5C
+}
+
+.button[href="/audio"] {
+  background-color: #3F826E
+}
+
+.button:focus {
+  background-color: transparent;
+  color: black;
+  border-bottom: 1px solid #111;
 }
 
 @keyframes App-logo-spin {

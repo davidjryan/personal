@@ -1,37 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Rubik);
+
+
 .App {
   text-align: center;
   font-family: 'Rubik', sans-serif;
-  padding: 0 50px 0 50px; }
+  padding: 0 50px 0 50px;
+}
 
 .App-header {
   background-color: white;
   padding: 20px;
-  color: black; }
+  color: black;
+}
 
 .App-title {
   margin: 0;
-  font-size: 3.5em; }
+  font-size: 3.5em;
+}
 
 .App-intro {
-  font-size: large; }
+  font-size: large;
+}
 
 #site-nav {
   text-transform: uppercase;
   margin: 0 auto;
   max-width: 860px;
   padding-bottom: 20px;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem
+}
 
 #main-nav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-  grid-gap: 2px; }
+  grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+  grid-gap: 2px;
+}
 
 #sub-nav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-  grid-gap: 2px; }
+  grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+  grid-gap: 2px;
+}
 
 .button {
   display: flex;
@@ -39,34 +48,46 @@
   justify-content: center;
   height: 38px;
   text-decoration: none;
-  color: white; }
+  color: white;
+}
 
 .button.home {
-  background-color: #E0995E; }
+  background-color: #E0995E
+}
 
 .button.code {
-  background-color: #C75C5C; }
+  background-color: #C75C5C
+}
 
 .button.sound {
-  background-color: #3F826E; }
+  background-color: #3F826E
+}
 
 .button:focus, .button:active {
   background-color: transparent;
   color: black;
-  border-bottom: 1px solid #111; }
+  border-bottom: 1px solid #111;
+}
+
+#content-holder {
+
+}
 
 h2 {
   margin-top: 0px;
   margin-bottom: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 .content-title {
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid black;
+}
 
 .previews {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem; }
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 2rem;
+}
 
 .preview-thumb {
   transition: all .4s ease;
@@ -77,10 +98,10 @@ h2 {
   background-repeat: no-repeat;
   background-color: #222;
   border: 1px solid #222;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

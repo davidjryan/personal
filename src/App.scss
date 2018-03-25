@@ -51,22 +51,54 @@
   color: white;
 }
 
-.button[href="/"] {
-  background-color: #82BFB7
+.button.home {
+  background-color: #E0995E
 }
 
-.button[href="/code"] {
+.button.code {
   background-color: #C75C5C
 }
 
-.button[href="/audio"] {
+.button.sound {
   background-color: #3F826E
 }
 
-.button:focus {
+.button:focus, .button:active {
   background-color: transparent;
   color: black;
   border-bottom: 1px solid #111;
+}
+
+#content-holder {
+
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.content-title {
+  border-bottom: 1px solid black;
+}
+
+.previews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 2rem;
+}
+
+.preview-thumb {
+  transition: all .4s ease;
+  width: 100%;
+  padding-bottom: 56.5%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #222;
+  border: 1px solid #222;
+  box-sizing: border-box;
 }
 
 @keyframes App-logo-spin {

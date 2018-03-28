@@ -4,7 +4,6 @@
 .App {
   text-align: center;
   font-family: 'Rubik', sans-serif;
-  padding: 0 50px 0 50px;
 }
 
 .App-header {
@@ -20,6 +19,10 @@
 
 .App-intro {
   font-size: large;
+}
+
+main {
+  padding: 0px 50px 0px 50px;
 }
 
 #site-nav {
@@ -70,7 +73,7 @@
 }
 
 #content-holder {
-
+  padding-bottom: 50px;
 }
 
 h2 {
@@ -83,10 +86,14 @@ h2 {
   border-bottom: 1px solid black;
 }
 
-.previews {
+.preview-container {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   grid-gap: 2rem;
+}
+
+.preview-content {
+  
 }
 
 .preview-thumb {
@@ -99,6 +106,13 @@ h2 {
   background-color: #222;
   border: 1px solid #222;
   box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+footer {
+  background-color: black;
+  padding: 20px 50px;
 }
 
 @keyframes App-logo-spin {

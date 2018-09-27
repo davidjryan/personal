@@ -51,6 +51,7 @@ main {
   justify-content: center;
   height: 38px;
   text-decoration: none;
+  transition: background-color .2s linear, color .2s linear;
   color: white;
 }
 
@@ -66,7 +67,7 @@ main {
   background-color: #3F826E
 }
 
-.button:focus, .button:active {
+.button-active {
   background-color: transparent;
   color: black;
   border-bottom: 1px solid #111;
@@ -108,6 +109,10 @@ h2 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+}
+
+.preview-thumb:hover {
+  opacity: 0;
 }
 
 footer {
